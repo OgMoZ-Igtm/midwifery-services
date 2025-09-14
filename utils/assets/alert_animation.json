@@ -1,0 +1,26 @@
+import streamlit as st
+import os
+
+
+def play_audio(file_path):
+    """Lit un fichier audio dans Streamlit, si disponible."""
+    if not os.path.exists(file_path):
+        st.error(f"❌ Fichier audio introuvable : {file_path}")
+        return
+    with open(file_path, "rb") as audio_file:
+        st.audio(audio_file.read(), format="audio/mp3")
+
+
+def trigger_sound(event_type):
+    """Déclenche un son selon le type d’événement."""
+    sounds = {
+        "connexion": "utils/assets/voix_douce.mp3",
+        "message": "utils/assets/battement_coeur.mp3",
+        "alerte": "utils/assets/bebe_pleure.mp3",
+        "rendezvous": "utils/assets/notif.mp3",
+    }
+    file_path = sounds.get(event_type)
+    if file_path:
+        play_audio(file_path)
+    else:
+        st.warning(f"🔕 Aucun son défini pour l’événement : {event_type}")

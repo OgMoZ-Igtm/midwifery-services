@@ -1,0 +1,23 @@
+import streamlit as st
+import base64
+
+
+def play_audio(audio_path: str, use_html=False):
+    try:
+        with open(audio_path, "rb") as f:
+            audio_bytes = f.read()
+
+        if use_html:
+            audio_base64 = base64.b64encode(audio_bytes).decode()
+            st.markdown(
+                f"""
+                <audio autoplay>
+                    <source src="data:audio/mp3;base64,{audio_base64}" type="audio/mp3">
+                </audio>
+                """,
+                unsafe_allow_html=True,
+            )
+        else:
+            st.audio(audio_bytes, format="audio/mp3")
+    except Exception as e:
+        st.error(f"❌ Erreur audio : {e}")

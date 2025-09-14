@@ -1,0 +1,503 @@
+{
+  "ADMIN": [
+    {
+      "name": "Admin Dashboard",
+      "file": "packs/ADMIN/ADMIN_01_Admin_Dashboard.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 1,
+      "id": "admin_dashboard"
+    },
+    {
+      "name": "Admin Hashing",
+      "file": "packs/ADMIN/ADMIN_02_Admin_Hashing.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 2,
+      "id": "admin_hashing"
+    },
+    {
+      "name": "Admin Logs",
+      "file": "packs/ADMIN/ADMIN_03_Admin_Logs.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 3,
+      "id": "admin_logs"
+    },
+    {
+      "name": "Admin Logs Visualisation",
+      "file": "packs/ADMIN/ADMIN_04_Admin_Logs_Visualisation.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 4,
+      "id": "admin_logs_visu"
+    },
+    {
+      "name": "Admin Roles",
+      "file": "packs/ADMIN/ADMIN_05_Admin_Roles.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 5,
+      "id": "admin_roles"
+    },
+    {
+      "name": "Admin Settings",
+      "file": "packs/ADMIN/ADMIN_06_Admin_Settings.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 6,
+      "id": "admin_settings"
+    },
+    {
+      "name": "Admin Users",
+      "file": "packs/ADMIN/ADMIN_07_Admin_Users.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 7,
+      "id": "admin_users"
+    },
+    {
+      "name": "Admin Visualisation",
+      "file": "packs/ADMIN/ADMIN_08_Admin_Obstetric_Dashboard.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 8,
+      "id": "admin_visualisation"
+    },
+    {
+      "name": "initialisation du pack ADMIN",
+      "file": "packs/ADMIN/ADMIN___init__.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 99,
+      "id": "admin_init"
+    }
+  ],
+  "LOGS": [
+    {
+      "name": "Journal des accès",
+      "file": "packs/ADMIN/LOGS/Logs.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 1,
+      "id": "access_log"
+    }
+  ],
+  "DOCTOR": [
+    {
+      "name": "Doctor Consultation Requests",
+      "file": "packs/DOCTOR/09_Doctor_Consultation_Requests.py",
+      "roles": [
+        "DOCTOR"
+      ],
+      "order": 1,
+      "id": "doctor_consult"
+    },
+    {
+      "name": "Doctor Diagnosis",
+      "file": "packs/DOCTOR/10_Doctor_Diagnosis.py",
+      "roles": [
+        "DOCTOR"
+      ],
+      "order": 2,
+      "id": "doctor_diagnosis"
+    },
+    {
+      "name": "Doctor History",
+      "file": "packs/DOCTOR/11_Doctor_History.py",
+      "roles": [
+        "DOCTOR"
+      ],
+      "order": 3,
+      "id": "doctor_history"
+    },
+    {
+      "name": "Doctor Prescriptions",
+      "file": "packs/DOCTOR/12_Doctor_Prescriptions.py",
+      "roles": [
+        "DOCTOR"
+      ],
+      "order": 4,
+      "id": "doctor_prescriptions"
+    },
+    {
+      "name": "Doctors Page",
+      "file": "packs/DOCTOR/13_Doctors_Page.py",
+      "roles": [
+        "DOCTOR"
+      ],
+      "order": 5,
+      "id": "doctor_page"
+    },
+    {
+      "name": "initialisation du pack DOCTOR",
+      "file": "packs/DOCTOR/DOCTOR___init__.py",
+      "roles": [
+        "DOCTOR"
+      ],
+      "order": 99,
+      "id": "doctor_init"
+    }
+  ],
+  "DOCTORAL": [
+    {
+      "name": "Doctoral Research",
+      "file": "packs/DOCTORAL/14_Doctoral_Research.py",
+      "roles": [
+        "DOCTORAL",
+        "ADMIN"
+      ],
+      "order": 1,
+      "id": "doctoral_research"
+    },
+    {
+      "name": "Publications",
+      "file": "packs/DOCTORAL/15_Publications.py",
+      "roles": [
+        "DOCTORAL",
+        "ADMIN"
+      ],
+      "order": 2,
+      "id": "doctoral_publications"
+    },
+    {
+      "name": "Suivi These",
+      "file": "packs/DOCTORAL/16_Suivi_These.py",
+      "roles": [
+        "DOCTORAL",
+        "ADMIN"
+      ],
+      "order": 3,
+      "id": "doctoral_suivi"
+    },
+    {
+      "name": "These",
+      "file": "packs/DOCTORAL/17_These.py",
+      "roles": [
+        "DOCTORAL",
+        "ADMIN"
+      ],
+      "order": 4,
+      "id": "doctoral_these"
+    },
+    {
+      "name": "initialisation du pack DOCTORAL",
+      "file": "packs/DOCTORAL/DOCTORAL___init__.py",
+      "roles": [
+        "DOCTORAL",
+        "ADMIN"
+      ],
+      "order": 99,
+      "id": "doctoral_init"
+    }
+  ],
+  "INTERN": [
+    {
+      "name": "Journal",
+      "file": "packs/INTERN/18_Journal.py",
+      "roles": [
+        "ADMIN",
+        "INTERN"
+      ],
+      "order": 1,
+      "id": "intern_journal"
+    },
+    {
+      "name": "Stage Evaluations",
+      "file": "packs/INTERN/19_Stage_Evaluations.py",
+      "roles": [
+        "ADMIN",
+        "INTERN"
+      ],
+      "order": 2,
+      "id": "intern_evaluations"
+    },
+    {
+      "name": "Stage Journal",
+      "file": "packs/INTERN/03_Stage_Journal.py",
+      "roles": [
+        "ADMIN",
+        "INTERN"
+      ],
+      "order": 3,
+      "id": "intern_stage_journal"
+    },
+    {
+      "name": "initialisation du pack INTERN",
+      "file": "packs/INTERN/INTERN___init__.py",
+      "roles": [
+        "ADMIN",
+        "INTERN"
+      ],
+      "order": 99,
+      "id": "intern_init"
+    }
+  ],
+  "MESSAGES": [
+    {
+      "name": "Chat",
+      "file": "packs/MESSAGES/22_Chat.py",
+      "roles": [
+        "ADMIN",
+        "ALL"
+      ],
+      "order": 1,
+      "id": "messages_chat"
+    },
+    {
+      "name": "Send Message",
+      "file": "packs/MESSAGES/25_Send_message.py",
+      "roles": [
+        "ADMIN",
+        "ALL"
+      ],
+      "order": 2,
+      "id": "messages_send"
+    },
+    {
+      "name": "Receive Message",
+      "file": "packs/MESSAGES/24_Receive_message.py",
+      "roles": [
+        "ADMIN",
+        "ALL"
+      ],
+      "order": 3,
+      "id": "messages_receive"
+    },
+    {
+      "name": "Inbox",
+      "file": "packs/MESSAGES/23_Inbox.py",
+      "roles": [
+        "ADMIN",
+        "ALL"
+      ],
+      "order": 4,
+      "id": "messages_inbox"
+    },
+    {
+      "name": "initialisation du pack MESSAGES",
+      "file": "packs/MESSAGES/MESSAGES___init__.py",
+      "roles": [
+        "ADMIN",
+        "ALL"
+      ],
+      "order": 99,
+      "id": "messages_init"
+    }
+  ],
+  "MIDWIFE": [
+    {
+      "name": "Demographics",
+      "file": "packs/MIDWIFE/26_Demographics.py",
+      "roles": [
+        "ADMIN",
+        "MIDWIFE"
+      ],
+      "order": 1,
+      "id": "midwife_demo"
+    },
+    {
+      "name": "Prenatal Care",
+      "file": "packs/MIDWIFE/27_PrenatalCare.py",
+      "roles": [
+        "ADMIN",
+        "MIDWIFE"
+      ],
+      "order": 2,
+      "id": "midwife_prenatal"
+    },
+    {
+      "name": "Intrapartum Care",
+      "file": "packs/MIDWIFE/28_IntrapartumCare.py",
+      "roles": [
+        "ADMIN",
+        "MIDWIFE"
+      ],
+      "order": 3,
+      "id": "midwife_intrapartum"
+    },
+    {
+      "name": "Post Natal Care",
+      "file": "packs/MIDWIFE/29_PostNatalCare.py",
+      "roles": [
+        "ADMIN",
+        "MIDWIFE"
+      ],
+      "order": 4,
+      "id": "midwife_postnatal"
+    },
+    {
+      "name": "Throughout Care",
+      "file": "packs/MIDWIFE/30_ThroughoutCare.py",
+      "roles": [
+        "ADMIN",
+        "MIDWIFE"
+      ],
+      "order": 5,
+      "id": "midwife_throughout"
+    },
+    {
+      "name": "initialisation du pack MIDWIFE",
+      "file": "packs/MIDWIFE/MIDWIFE___init__.py",
+      "roles": [
+        "ADMIN",
+        "MIDWIFE"
+      ],
+      "order": 99,
+      "id": "midwife_init"
+    }
+  ],
+  "NURSE": [
+    {
+      "name": "Nurse Medicaments",
+      "file": "packs/NURSE/31_Nurse_Medicaments.py",
+      "roles": [
+        "ADMIN",
+        "NURSE"
+      ],
+      "order": 1,
+      "id": "nurse_meds"
+    },
+    {
+      "name": "Nurse Patients",
+      "file": "packs/NURSE/32_Nurse_Patients.py",
+      "roles": [
+        "ADMIN",
+        "NURSE"
+      ],
+      "order": 2,
+      "id": "nurse_patients"
+    },
+    {
+      "name": "initialisation du pack NURSE",
+      "file": "packs/NURSE/NURSE___init__.py",
+      "roles": [
+        "ADMIN",
+        "NURSE"
+      ],
+      "order": 99,
+      "id": "nurse_init"
+    }
+  ],
+  "ORGANISATION": [
+    {
+      "name": "Appointments Calendar",
+      "file": "packs/ORGANISATION/33_Appointments_Calendar.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 1,
+      "id": "org_appointments"
+    },
+    {
+      "name": "Calendar",
+      "file": "packs/ORGANISATION/02_Calendar.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 2,
+      "id": "org_calendar"
+    },
+    {
+      "name": "Complications",
+      "file": "packs/ORGANISATION/35_Complications.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 3,
+      "id": "org_complications"
+    },
+    {
+      "name": "Modify Patient Folder",
+      "file": "packs/ORGANISATION/36_Modify_Patient_Folder.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 4,
+      "id": "org_modify_folder"
+    },
+    {
+      "name": "initialisation du pack ORGANISATION",
+      "file": "packs/ORGANISATION/ORGANISATION___init__.py",
+      "roles": [
+        "ADMIN"
+      ],
+      "order": 99,
+      "id": "org_init"
+    }
+  ],
+  "STUDENT": [
+    {
+      "name": "Cours Suivis",
+      "file": "packs/STUDENT/41_Cours_Suivis.py",
+      "roles": [
+        "STUDENT",
+        "ADMIN"
+      ],
+      "order": 1,
+      "id": "student_cours_suivis"
+    },
+    {
+      "name": "Student Evaluations",
+      "file": "packs/STUDENT/42_Student_Evaluations.py",
+      "roles": [
+        "STUDENT",
+        "ADMIN"
+      ],
+      "order": 2,
+      "id": "student_evaluations"
+    },
+    {
+      "name": "Student Practice",
+      "file": "packs/STUDENT/43_Student_Practice.py",
+      "roles": [
+        "STUDENT",
+        "ADMIN"
+      ],
+      "order": 3,
+      "id": "student_practice"
+    },
+    {
+      "name": "Suivi",
+      "file": "packs/STUDENT/44_Suivi.py",
+      "roles": [
+        "STUDENT",
+        "ADMIN"
+      ],
+      "order": 4,
+      "id": "student_suivi"
+    },
+    {
+      "name": "initialisation du pack STUDENT",
+      "file": "packs/STUDENT/__init__.py",
+      "roles": [
+        "STUDENT",
+        "ADMIN"
+      ],
+      "order": 99,
+      "id": "student_init"
+    }
+  ],
+  "PROFILE": [
+    {
+      "name": "Profil utilisateur",
+      "file": "packs/PROFILE/profile.py",
+      "roles": [
+        "ADMIN",
+        "ALL"
+      ],
+      "order": 1,
+      "id": "user_profile"
+    }
+  ]
+}
